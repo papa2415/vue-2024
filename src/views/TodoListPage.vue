@@ -23,7 +23,7 @@ onMounted(async () => {
     initTodo()
   } catch (error) {
     window.alert('驗證錯誤，請重新登入')
-    window.location.assign('/#')
+    window.location.assign('#/')
   }
 
   //user.value = res.data

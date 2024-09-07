@@ -24,7 +24,7 @@ const signUp = async () => {
   try {
     const res = await axios.post(`${api}/users/sign_up`, user.value)
     window.alert('註冊成功')
-    window.location.assign('/#/')
+    window.location.assign('#/')
   } catch (error) {
     console.log(error)
     window.alert(error.response.data.message)
