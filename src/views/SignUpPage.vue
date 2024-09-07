@@ -23,11 +23,8 @@ const checkSignUp = () => {
 const signUp = async () => {
   try {
     const res = await axios.post(`${api}/users/sign_up`, user.value)
-    //  signupRes.value = res.data.uid
-    //abc uid: "-O6987NpaDkuAIM9LjNV"
-    //bcd uid: -O69993vhSHr8djCwYFg
     window.alert('註冊成功')
-    window.location.assign('/#')
+    window.location.assign('/#/')
   } catch (error) {
     console.log(error)
     window.alert(error.response.data.message)
@@ -39,7 +36,7 @@ const signUp = async () => {
   <div id="signUpPage" class="bg-yellow">
     <div class="conatiner signUpPage vhContainer">
       <div class="side">
-        <a href="#"
+        <a href="/#/"
           ><img
             class="logoImg"
             src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/todolist/logo.png"
@@ -99,8 +96,7 @@ const signUp = async () => {
             value="註冊帳號"
             @click.prevent="checkSignUp"
           />
-          <!--onclick="javascript:location.href='#todoListPage'"-->
-          <a class="formControls_btnLink" href="#">登入</a>
+          <a class="formControls_btnLink" href="/#/">登入</a>
         </form>
       </div>
     </div>

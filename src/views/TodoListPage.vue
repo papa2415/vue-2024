@@ -123,29 +123,29 @@ const logOut = async () => {
 <template>
   <div id="todoListPage" class="bg-half">
     <nav>
-      <h1><a href="#">ONLINE TODO LIST</a></h1>
+      <h1><a href=/#/">ONLINE TODO LIST</a></h1>
       <ul>
         <li class="todo_sm">
           <a href="#/todoListPage"
             ><span>{{ nickname }}的代辦</span></a
           >
         </li>
-        <li><a href="#" @click.prevent="logOut">登出</a></li>
+        <li><a href="/#/" @click.prevent="logOut">登出</a></li>
       </ul>
     </nav>
     <div class="conatiner todoListPage vhContainer">
       <div class="todoList_Content">
         <div class="inputBox">
           <input type="text" placeholder="請輸入待辦事項" v-model="todoItem" />
-          <a href="#" @click.prevent="addItem">
+          <a href="/#/" @click.prevent="addItem">
             <i class="fa fa-plus"></i>
           </a>
         </div>
         <div class="todoList_list">
           <ul class="todoList_tab">
-            <li><a href="#" :class="all" @click.prevent="allList">全部</a></li>
-            <li><a href="#" :class="wait" @click.prevent="waitList">待完成</a></li>
-            <li><a href="#" :class="complete" @click.prevent="completeList">已完成</a></li>
+            <li><a href="/#/" :class="all" @click.prevent="allList">全部</a></li>
+            <li><a href="/#/" :class="wait" @click.prevent="waitList">待完成</a></li>
+            <li><a href="/#/" :class="complete" @click.prevent="completeList">已完成</a></li>
           </ul>
           <div class="todoList_items">
             <ul class="todoList_item" v-for="(item, key) in todo" :key="item.id">
@@ -160,7 +160,7 @@ const logOut = async () => {
                   />
                   <span>{{ item.content }}</span>
                 </label>
-                <a href="#" @click.prevent="deleteItem(item.id)"> <i class="fa fa-times"></i> </a>
+                <a href="/#/" @click.prevent="deleteItem(item.id)"> <i class="fa fa-times"></i> </a>
               </li>
             </ul>
             <div class="todoList_statistics" v-if="todo.length != 0">

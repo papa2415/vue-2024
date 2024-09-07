@@ -31,7 +31,7 @@ const signIn = async () => {
   <div id="loginPage" class="bg-yellow">
     <div class="conatiner loginPage vhContainer">
       <div class="side">
-        <a href="/#"
+        <a href="/#/"
           ><img
             class="logoImg"
             src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/todolist/logo.png"
@@ -70,7 +70,7 @@ const signIn = async () => {
           />
           <input class="formControls_btnSubmit" type="button" value="登入" @click="signIn" />
           <!--onclick="javascript:location.href='#todoListPage'" -->
-          <a class="formControls_btnLink" href="#signUpPage">註冊帳號</a>
+          <a class="formControls_btnLink" href="#/signUpPage">註冊帳號</a>
         </form>
       </div>
     </div>
