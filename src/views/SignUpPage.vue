@@ -36,7 +36,7 @@ const signUp = async () => {
   <div id="signUpPage" class="bg-yellow">
     <div class="conatiner signUpPage vhContainer">
       <div class="side">
-        <a href="/#/"
+        <a href="#/"
           ><img
             class="logoImg"
             src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/todolist/logo.png"
@@ -96,7 +96,7 @@ const signUp = async () => {
             value="註冊帳號"
             @click.prevent="checkSignUp"
           />
-          <a class="formControls_btnLink" href="/#/">登入</a>
+          <a class="formControls_btnLink" href="#/">登入</a>
         </form>
       </div>
     </div>

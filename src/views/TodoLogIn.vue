@@ -31,7 +31,7 @@ const signIn = async () => {
   <div id="loginPage" class="bg-yellow">
     <div class="conatiner loginPage vhContainer">
       <div class="side">
-        <a href="/#/"
+        <a href="#/"
           ><img
             class="logoImg"
             src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/todolist/logo.png"
